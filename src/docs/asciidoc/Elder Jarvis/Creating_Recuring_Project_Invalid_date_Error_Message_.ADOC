@@ -1,0 +1,23 @@
+[.text-center]
+
+= Creating Recuring Project “Invalid date” Error Message 
+
+[.text-left]
+ 
+Creating a recurring project Is an excellent way to reserve a project for service opportunities that are ongoing! However, there is a little bit of a design flaw when creating one yourself.
+
+[.text-left]
+
+On the 3rd page of creating a project after you enter in the information pronating to your project and click *“Continue”* you might get an error message saying *“invalid date”* inside a small box. 
+
+[.text-left]
+
+This is where the designee flaw begins. The thought prosses of the website is any information entered in starting from the Heading *“Recurring Times”* to the bottom of page 3 is a temporary place where information is entered in but never saved.
+
+[.text-left]
+
+To keep the information entered in you will need to click the orange "Add date/time” Button placed just above the *“Continue”* button. This will Save the information and if you want to remove it you can just check below the *“Recurring Times”* Heading. The information saved will be presented with the start to the end time of the project on the left-hand side. On the right side you will find a turquoise pencil and the word *“Edit”* followed by a red trash can with the words *“Delete”*.
+
+[.text-left]
+
+If you wish to enter the same or different information into those fields below *“Recurring Times”* fill in the info, then click *"Add date/time”* and it will add another tile below the *“Recurring Times”*.
