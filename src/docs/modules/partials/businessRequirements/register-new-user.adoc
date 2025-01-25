@@ -1,7 +1,7 @@
 = Register a New User
 :author: "Jonathan Zollinger"
 
-[mermaid, target = "register-new-user-diagram.svg"]
+[mermaid, target = "register-new-user-diagram"]
 ----
 flowchart LR
 subgraph s1["Navigates to Registration Page"]
