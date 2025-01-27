@@ -10,7 +10,10 @@ If you're not familiar with Asciidoc, it's easy to pick up and there are many re
 
 When writing Asciidoc, it's best to use a text editor that supports syntax highlighting and formatting. A great text editor to use is [Visual Studio Code](https://code.visualstudio.com/). You can also just write them here in the browser on GitHub! 
 
-> [!WARNING] **Do not use Microsoft Word or any other word processor to edit the documentation.** Asciidoc files are not word documents. 
+> [!WARNING]
+> **Do not use Microsoft Word or any other word processor to edit the documentation.**
+>
+> Asciidoc files are not word documents and are not compatible with that editor.
 
 ## Git Best Practices
 
