@@ -1,4 +1,4 @@
-# Asciidoc Style Guide
+# AsciiDoc Style Guide
 
 ----
 
@@ -75,4 +75,4 @@ print("Hello, World!")
 
 ### File extensions
 
-* Use `.adoc` as asciidoc file extensions.
+* Use `.adoc` as AsciiDoc file extensions.
