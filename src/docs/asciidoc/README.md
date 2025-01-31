@@ -41,13 +41,13 @@ Place the email at the top of the file, under the document title.
 * Use two backticks `(``)` for `monospace`.
 
 ### 3.b Lists
-* For unordered lists, use `*` for each item and indentation to create nested items. For example:
+* For **unordered** lists, use `*` for each item and indentation to create nested items. For example:
 ```
 * First item
   ** Sub-item
 * Second item
 ```
-* For ordered lists, use `.` for each item and indentation to create nested items. For example:
+* For **ordered** lists, use `.` for each item and indentation to create nested items. For example:
 ```
 . First item
 . Second item
@@ -55,9 +55,9 @@ Place the email at the top of the file, under the document title.
 ```
 
 ### 4. Links
-* Use `{url}[Link text]` or `link:{url}[Link text]` for external links.
+* For external links, use `{url}[Link text]` or `link:{url}[Link text]`\
 For example:
-`https://example.com[Example]` OR `link:https://example.com[Example]`
+`https://example.com[Example]` or `link:https://example.com[Example]`
 
 * For internal links within the document, use `<<section-id, Section Title>>`, where `section-id` is a document element with an identifier.
 
