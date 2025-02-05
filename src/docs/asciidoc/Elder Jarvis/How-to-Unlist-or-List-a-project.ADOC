@@ -1,0 +1,18 @@
+[.text-center]
+
+= How to Unlist/List a Project
+// I reason I say Unlist/list or Unlisting or listing instead of the other way around is cause when you get there the first time is says "Unlist" cause the project is already listed and this would be the first time someone would be doing this if someone is reading this article.
+
+[.text-left]
+
+Unlisting or listing a project can give you the ability to have a project be visible or invisible to the public eye when browsing or searching with out deleting the project entirely.
+
+[.text-left]
+
+
+
+To locate the options to Unlist/List a project, locate either the active or past project in the "Projects" dropdown in "My Dashboard"
+
+[.text-left]
+
+To navigate this 
