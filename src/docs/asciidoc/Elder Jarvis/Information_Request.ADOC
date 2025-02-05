@@ -1,0 +1,30 @@
+[.text-center]
+
+= How to respond to a "Information Request" in ZenDesk
+
+[.text-left]
+Information Request are an excellent way for people who want to Learn more about JustServe or want to know how there organization might benefit by partnering with JustServe. 
+
+[.text-left]
+
+An Information request would be created when a user of the platform navigates to the "About US" tab on the **JustServe** website. From here the user might scroll to the very bottom of this page to find the "**Contact your local specialist**" heading. Next they would enter in the appropriate information and click submit.
+
+[.text-left]
+
+The info they provided will then be added into a automated email generator that will create an email with the subject being "**JustServe Information Request**" then in the body a box with the JustServe Logo centered at the top with text bellow with a users Name, Email, Country, Zip Code and their typed Message for their specialist.
+
+[.text-left]
+
+A user's local specialist is determined based the location they provided in the form. The nearest specialist to that location it the one who would be that users specialist.
+
+[.text-left]
+
+**Pleas note Information Request emails ARE NOT intended for you.** Although the email is directly sent to us in ZenDesk the users nearest specialist is CC'ed (Carbon Copied) into the same email. The user will never get you message if you were to message back. The specialist expectation now is to reach out to the user. Once they have done this,specialist are expected to reply to the email confirming for us that the user has been accounted for.
+
+[.text-left]
+
+**So how do you respond to Information request in ZenDesk?**
+ 
+[.text-left]
+
+If after some time has passed and the specialist has not gotten back to us confirming for us that the user has been accounted for. Our job now is to reply to the email sending the the users specialist a friendly reminder to please get back to are user.
