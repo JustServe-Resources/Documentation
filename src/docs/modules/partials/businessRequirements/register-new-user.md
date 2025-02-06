@@ -1,8 +1,9 @@
-= Register a New User
-:author: "Jonathan Zollinger"
+---
+title: Register a New User
+author: Jonathan Zollinger
+---
 
-[mermaid, target = "register-new-user-diagram"]
-----
+```mermaid
 flowchart LR
 subgraph s1["Navigates to Registration Page"]
 B("Visits JustServe.org<br>")
@@ -43,4 +44,4 @@ n9@{ shape: rect}
 n12@{ shape: rect}
 n10@{ shape: braces}
 n11@{ shape: hex}
-----
+```
