@@ -1,8 +1,8 @@
-----
+---
 Title: Help Requests General Flow
 author: Jonathan Zollinger
 Description: HQ WF for addressing Help Requests in JustServe
-----
+---
 ## Help Requests General Flow
 This workflow documents the lifecycle of tickets in JustServe's Zendesk
 
