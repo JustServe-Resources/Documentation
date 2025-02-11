@@ -26,7 +26,7 @@ flowchart TD
     n10 --> n8
     n4 --> n6
     n8 -- Yes --> n11["Use the Jira integration in Zendesk to link this ticket to the Defect"]
-    click n9 "https://github.com/JustServe-Resources/Documentation/blob/docs/src/docs/asciidoc/en/Workflows/Help-Requests.md/Document-a-Defect.md" _blank
+    click n9 "https://github.com/JustServe-Resources/Documentation/blob/docs/src/docs/en/Workflows/Help-Requests.md/Document-a-Defect.md" _blank
     n9 --> n11
     n11 --> n12["Inform the user that this defect has been documented and the devs are now aware of the defect and will be fixing it. Let them know that you will be able to let them know when this defect is addressed."]
     n12 --> n13@{ label: "Mark the ticket as 'On Hold'" }
