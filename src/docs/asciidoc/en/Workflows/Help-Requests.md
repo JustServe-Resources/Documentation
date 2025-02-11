@@ -7,8 +7,6 @@ Description: HQ WF for addressing Help Requests in JustServe
 This workflow documents the lifecycle of tickets in JustServe's Zendesk
 
 
-See [instructions on writing a defect](./Document-a-Defect.md).
-
 
 ```mermaid
 ---
@@ -25,6 +23,7 @@ flowchart TD
     n7["Is the JustServe Software working as expected?"] -- No --> n10["Use the Jira integration with zendesk to search for an existing defect report for this defect"]
     n7 -- Yes --> n2
     n8["Is this Defect already documented? <br>"] -- No --> n9["Document the Defect"]
+    click n9 "./Document-a-Defect.md"
     n10 --> n8
     n4 --> n6
     n8 -- Yes --> n11["Use the Jira integration in Zendesk to link this ticket to the Defect"]
@@ -93,4 +92,5 @@ flowchart TD
     classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
     classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+
 ```
