@@ -23,7 +23,7 @@ flowchart TD
     n7["Is the JustServe Software working as expected?"] -- No --> n10["Use the Jira integration with zendesk to search for an existing defect report for this defect"]
     n7 -- Yes --> n2
     n8["Is this Defect already documented? <br>"] -- No --> n9["Document the Defect"]
-    click n9 "./Document-a-Defect.md"
+    click n9 "https://github.com/JustServe-Resources/Documentation/blob/docs/src/docs/asciidoc/en/Workflows/Help-Requests.md/Document-a-Defect.md" _blank
     n10 --> n8
     n4 --> n6
     n8 -- Yes --> n11["Use the Jira integration in Zendesk to link this ticket to the Defect"]
