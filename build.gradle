@@ -6,7 +6,7 @@ plugins {
     id("io.micronaut.aot") version "4.4.4"
 }
 
-version = "0.1"
+version = "0.0.2"
 group = "org.justserve"
 
 apply from: "gradle/asciidoc.gradle"
