@@ -14,7 +14,7 @@ config:
   theme: neo-dark
 ---
 flowchart TD
-    n1["User expresses a concern or a need with a project"] --> n17["Does the User provide sufficiently clear information for you to understand their needs and context?"]
+    n1["User expresses a concern or a need with a project"] --> n30@{ label: "The user's type is a tech specialist or area specialist" }
     n2@{ label: "Is there an article in the resource hub that answers the user's needs?" } -- Yes --> n3["Is the article unclear, out of date, or in need of other edits?"]
     n2 -- No --> n4@{ label: "Write a new article which answers this user's needs or concern" }
     n3 -- Yes --> n5["Improve the documentation"]
@@ -26,21 +26,29 @@ flowchart TD
     n10 --> n8
     n4 --> n6
     n8 -- Yes --> n11["Use the Jira integration in Zendesk to link this ticket to the Defect"]
-    click n9 "https://github.com/JustServe-Resources/Documentation/blob/docs/src/docs/en/Workflows/Help-Requests.md/Document-a-Defect.md" _blank
     n9 --> n11
     n11 --> n12["Inform the user that this defect has been documented and the devs are now aware of the defect and will be fixing it. Let them know that you will be able to let them know when this defect is addressed."]
     n12 --> n13@{ label: "Mark the ticket as 'On Hold'" }
     n6 --> n14["Inlcude a formatted hyperlink to the article in zendesk for them to read. <br>"]
     n14 --> n15["Thank them for writing in to the resource hub. Sign the message with your name, <br><br>DO NOT sign emails as an anonymous part of the JustServe Help Center"]
     n15 --> n16["Mark the ticket as Solved"]
-    n17 -- No --> n18["Ask the user for specific, clarifying information. <br><br>Do not ask for technical information such as API logs or HAR files. <br>"]
+    n17["Does the User provide sufficiently clear information for you to understand their needs and context?"] -- No --> n18["Ask the user for specific, clarifying information. <br><br>Do not ask for technical information such as API logs or HAR files. <br>"]
     n17 -- Yes --> n7
     n18 --> n19["Mark the ticket as Pending"]
-    n20["A user responds to a previous discussion with new information <br>"] --> n17
-    n21["User Requests a JustServe Email Account"] --> n22["Assign to Email Group"]
+    n21["User Requests a JustServe Email Account"] --> n22["Assign to Megan"]
     n22 --> n23["Mark Ticket as Open"]
+    n24["User Request relates to JustServe Cities"] --> n25["Assign to Jacob"]
+    n25 --> n23
+    n26["User Request relates to JustServe Clubs"] --> n22
+    n27["User is a new Specialist asking for training"] --> n28@{ label: "Assign to Field Team assigned to the specialist's area" }
+    n28 --> n23
+    n29["User Request relates to policy or posting guidelines <br>"] --> n28
+    n30 -- No --> n17
+    n30 --> n31["Assign to Jonathan"]
+    n31 --> n23
+    n20["A user responds to a previous discussion with new information <br>"] --> n30
     n1@{ shape: card}
-    n17@{ shape: diam}
+    n30@{ shape: decision}
     n2@{ shape: diam}
     n3@{ shape: diam}
     n4@{ shape: docs}
@@ -55,14 +63,22 @@ flowchart TD
     n14@{ shape: doc}
     n15@{ shape: doc}
     n16@{ shape: paper-tape}
+    n17@{ shape: diam}
     n18@{ shape: doc}
     n19@{ shape: paper-tape}
     n20@{ shape: card}
     n21@{ shape: card}
     n22@{ shape: stored-data}
     n23@{ shape: paper-tape}
+    n24@{ shape: card}
+    n25@{ shape: stored-data}
+    n26@{ shape: card}
+    n27@{ shape: card}
+    n28@{ shape: stored-data}
+    n29@{ shape: card}
+    n31@{ shape: stored-data}
      n1:::Rose
-     n17:::Peach
+     n30:::Peach
      n2:::Peach
      n3:::Peach
      n4:::Pine
@@ -84,6 +100,7 @@ flowchart TD
      n14:::email
      n15:::email
      n16:::Pine
+     n17:::Peach
      n18:::Aqua
      n18:::Ash
      n18:::email
@@ -92,13 +109,21 @@ flowchart TD
      n21:::Rose
      n22:::Sky
      n23:::Rose
-    classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
+     n24:::Rose
+     n25:::Sky
+     n26:::Rose
+     n27:::Rose
+     n28:::Sky
+     n29:::Rose
+     n31:::Sky
     classDef email stroke:#AA00FF, fill:#E1BEE7, color:#000000
     classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
     classDef OnHold stroke-width:1px, stroke-dasharray: 0, stroke:#757575, fill:#424242, color:#FFFFFF
     classDef Pine stroke-width:1px, stroke-dasharray:none, stroke:#254336, fill:#27654A, color:#FFFFFF
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
     classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
     classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
     click n9 "./Document-a-Defect.md"
+
 ```
