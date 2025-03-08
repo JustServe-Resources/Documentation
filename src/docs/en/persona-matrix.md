@@ -39,11 +39,11 @@ flowchart LR
   end
     n8 -- x17 --- n2 & n3
     n9 -- x?? --- n4 & n5
-    n5 --- n12
     n15 --- n8
     n21 --- n15
     n23 --- n20
     n20 --- n9
+    n5 --- n13
     n8@{ shape: procs}
     n9@{ shape: procs}
     n11@{ shape: stored-data}
