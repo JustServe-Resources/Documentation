@@ -84,4 +84,11 @@ flowchart LR
     classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
     classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
     classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    click n9 #bordering-civic-boundaries
 ```
+
+### Bordering Civic Boundaries
+Locations near civic boundaries have presented problems and we want to make sure we're testing for this and any unforseen issues. 
+for example: 
+- within 5 miles of Spokane, WA should NOT include anything from Idaho
+- within 10 miles of Spokane, WA SHOULD include idaho regional projects
