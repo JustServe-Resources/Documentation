@@ -24,7 +24,7 @@ flowchart LR
         n11["Large group of users from USA lead by someone using firefox mobile on an android phone"]
         n10["Multi Admin Org from Langley, BC on mac desktops using safari"]
         n12["Single User from Mulhouse, France using an iPad and chrome"]
-        n13["School Club from Spokane, WA using Edge on a small desktop"]
+        n13["School Club from Spokane, WA using Edge on a small desktop running firefox"]
   end
  subgraph s4["Device"]
         n15["Supported Phone Display sizes"]
