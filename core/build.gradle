@@ -9,7 +9,7 @@ plugins {
 version = "0.0.2"
 group = "org.justserve"
 
-apply from: "gradle/asciidoc.gradle"
+apply from: "../gradle/asciidoc.gradle"
 repositories {
     mavenCentral()
 }
