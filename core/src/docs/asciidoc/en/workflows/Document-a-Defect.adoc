@@ -1,0 +1,55 @@
+—
+Title: Document a Defect
+author: Jonathan Zollinger
+
+== Description: HQ Workflow for Documenting Defects in JustServe
+
+== Defect Reports
+
+Defects are reported in Jira which link is not documented in this public doc. Reach out to Jonathan or look in teams for the link. 
+
+== 1. Expected Behavior
+
+*Why it matters:* It may seem silly, but the person who ends up reading this needs this basic context. It's the baseline for comparison. Without knowing the intended behavior, someone jumping into this without context can't determine if something is truly a defect.
+
+*How to describe it:* Write this as if you're writing a note to yourself which you'll read a year from now. Provide context and help someone come at this with fresh eyes. A simple explanation will suffice.
+
+*Example:* "When a user clicks the 'Submit' button on the volunteer opportunity form [at `.org/this/path` ], they should be redirected to a confirmation page displaying a success message."
+
+== 2. Current Behavior
+
+*Why it matters:* This describes what is _actually_ happening. It highlights the deviation from the expected behavior and establishes the actual symptoms of the defect.
+
+*How to describe it:* Follow Sherlock Holmes' example of looking specifically at symptoms, not reporting assumptions.
+
+*GOOD Example:* "When a user navigates away from `justserve.org/account` without making any changes, an error message appears telling them to save their work"
+
+*BAD Example:* "when a user navigates away from `justserve.org/account`, the site still thinks that it's made some changes and tries to make them save before leaving"
+
+== 3. Steps to Reproduce
+
+*Why it matters:* This allows us to recreate the issue consistently. If we can't reproduce the problem, we can't fix it. Of all the elements of a bug report, This is the most critical!
+
+*How to describe it:* Be step-by-step and detailed. Include every action you took, even if it seems insignificant. The more detail, the better. We can gauge if this is successfully written if another person has to ask for more information when reviewing this defect.
+
+*Example:*
+
+. Log in to JustServe.
+. Click your username and select "Edit Profile".
+. Make no changes.
+. Navigate back to the home page (click the JustServe Logo)
+. At this point the defect is seen. an error window asks us to save our changes despite making no changes.
+
+== 4. Environment
+
+*Why it matters:* Defects can be specific to certain browsers, operating systems, or devices. Knowing the environment helps us narrow down the cause.
+
+*How to describe it:* This is less critical, but only takes a moment to jot down the browser, device and OS. There's no need to even define the browser version or hardware details.
+
+If this is not known at the time of writing the defect, proceed to submit the defect, but ask any parties for this information. General information is all that is needed.
+
+*Examples:*
+
+- Windows 11 Desktop running Firefox
+- Pixel 8 running Chrome
+- Macbook running Safari
