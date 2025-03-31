@@ -1,0 +1,24 @@
+name: Run Tests
+on: [pull_request]
+jobs:
+  build:
+    name: run browser tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout source
+        uses: actions/checkout@v4
+      - name: setup JVM
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '17'
+          distribution: 'graalvm'
+          github-token: ${{ secrets.GITHUB_TOKEN }} # This actually isn't set, but it's not complaining atm.
+          native-image-job-reports: 'true'
+      - name: Install chrome
+        if: matrix.os == 'ubuntu-latest'
+        uses: ./.github/actions/setup-chrome
+      - name: Install FireFox
+        if: matrix.os == 'ubuntu-latest'
+        uses: ./.github/actions/setup-firefox
+      - name: call gradle to run tests and then compile
+        run: ./gradlew :jom:test
