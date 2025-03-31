@@ -8,4 +8,5 @@ plugins {
 }
 rootProject.name="documentation"
 include("core")
+include("jom")
 
