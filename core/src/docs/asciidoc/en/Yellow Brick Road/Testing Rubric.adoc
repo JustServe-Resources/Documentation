@@ -1,24 +1,114 @@
 == *JustServe.org: Yellow Brick Road Testing Rubric*
 
 *Purpose:* To classify user journeys within JustServe.org based on their importance and frequency of use, thereby guiding the allocation and intensity of testing resources. This rubric is designed to be used in tandem with a detailed persona matrix. +
-*Core Principle:* Journeys classified as the "Yellow Brick Road" represent the most critical and frequently used paths. These require the most rigorous testing across the widest range of user contexts (defined by the persona matrix). Less critical paths ("Side Roads," "Minor Roads") receive proportionally less intensive testing. +
+*Core Principle:* Journeys classified as the "Yellow Brick Road" represent the most critical and frequently used paths. These require the most rigorous testing across the widest range of user contexts (defined by the persona matrix).
+
 *How to Use:*
 
 . *Identify Journeys:* Define specific start-to-finish user tasks on JustServe.org (e.g., "Find and view local projects," "Register a new account," "Submit a new project for approval").
 . *Classify Journeys:* Evaluate each journey against the criteria below to assign it a "Road Type" (Level 1-4).
-. *Determine Testing Scope:* Use the assigned Road Type to understand the required testing depth, types, and priority.
 . *Integrate Persona Matrix:* Combine the Road Type with your persona matrix (user types, locations, privileges, devices, languages) to generate specific test cases. For example, a Level 1 journey must be tested across all high-priority combinations defined in the matrix.
 
-=== *Rubric Levels &amp; Testing Needs*
+=== *Rubric Levels & Testing Needs*
 
 [cols="<,<,<,<,<"]
 |===
-|Level |Road Type |Description &amp; Criteria |Example JustServe Journeys |Minimum Testing Needs 
+|Level |Road Type |Description &amp; Criteria |Example JustServe Journeys |Minimum Testing Needs
 
-|*1* |*Yellow Brick Road* |*Essential, high-traffic core paths.*• *Frequency:* Very High (Daily/Weekly by most users)• *Criticality:* Essential for core mission• *Impact of Failure:* Critical (Blocks core function, high visibility)• *Personas:* Broad range of core personas |• Searching for local projects &amp; viewing details (unregistered user)• User registration• User login• Expressing interest/signing up for a project• Basic search returning relevant results |• *Priority:* Highest• *Types:* Rigorous Functional (all paths, errors, edges), End-to-End Scenarios, High-Priority Usability, Performance (Load/Stress), Security, Accessibility (WCAG), Comprehensive Regression• *Automation:* High priority• *Persona Scope:* All critical personas, devices, browsers, core languages, representative locations. 
-|*2* |*Major Side Roads* |*Important, frequent paths supporting core functions or key user groups.*• *Frequency:* High/Medium• *Criticality:* Important• *Impact of Failure:* Significant (Hinders key tasks)• *Personas:* Specific core or moderate range |• Org Rep: Creating/submitting a new project• User: Advanced search filtering (interests, dates)• User: Managing profile• User: Contacting organizer via platform• Admin: Approving/rejecting projects |• *Priority:* High• *Types:* Thorough Functional (happy path, common errors), Key Scenarios, Targeted Usability, Regression• *Automation:* Recommended for key flows• *Persona Scope:* Primary associated personas, key devices/browsers, primary languages. Sample others. 
-|*3* |*Minor Roads* |*Less frequent paths, supporting features, specific admin tasks.*• *Frequency:* Medium/Low• *Criticality:* Supporting• *Impact of Failure:* Moderate/Low (Inconvenience)• *Personas:* Niche or specific admin roles |• Accessing Help/FAQ• Changing language preference• Password reset• Admin: Less common user management• Unsubscribing from notifications |• *Priority:* Medium• *Types:* Functional (happy path focus), Exploratory, Basic Regression (if impacted)• *Automation:* Lower priority (maybe smoke tests)• *Persona Scope:* Primary platform/browser, relevant personas. Less cross-configuration needed. 
-|*4* |*Dirt Tracks* |*Rarely used features, edge cases, low-impact paths.*• *Frequency:* Very Low• *Criticality:* Low/Non-Essential• *Impact of Failure:* Minimal• *Personas:* Very few, specific users |• Accessing archived/old pages• Using deprecated features• Highly specific/infrequent admin reports |• *Priority:* Low• *Types:* Exploratory, Smoke Test, Functional (only if modified)• *Automation:* Generally not automated• *Persona Scope:* Spot check on primary configuration if tested beyond basic verification. 
+|*1* |*Highway* |*Essential, high-traffic core paths.*
+
+• *Frequency:* Very High (Daily/Weekly by most users)
+
+• *Criticality:* Essential for core mission
+
+• *Impact of Failure:* Critical (Blocks core function, high visibility)
+
+• *Personas:* Broad range of core personas |
+
+• Searching for local projects &amp; viewing details (unregistered user)• User registration
+
+• User login
+
+• Expressing interest/signing up for a project
+
+• Basic search returning relevant results |
+
+• *Manual:* Highest Priority Manual Snow Plows and Flat Tires
+
+• *Automation:* Highest priority Automated Snow Plows and Flat Tires
+
+• *Persona Scope:* All critical personas, devices, browsers, core languages, representative locations.
+|*2* |*City Streets* |*Important, frequent paths supporting core functions or key user groups.*
+
+• *Frequency:* High/Medium
+
+• *Criticality:* Important
+
+• *Impact of Failure:* Significant (Hinders key tasks)
+
+• *Personas:* Specific core or moderate range |
+
+• Org Rep: Creating/submitting a new project
+
+• User: Advanced search filtering (interests, dates)
+
+• User: Managing profile
+
+• User: Contacting organizer via platform
+
+• Admin: Approving/rejecting projects |
+
+• *Manual:* Second-Highest Priority Manual Snow Plows and Flat Tires
+
+• *Automation:* Second-Highest Snow Plows and Flat Tires
+
+• *Persona Scope:* Primary associated personas, key devices/browsers, primary languages. Sample others.
+
+|*3* |*Residential Streets* |*Less frequent paths, supporting features, specific admin tasks.*
+
+• *Frequency:* Medium/Low
+
+• *Criticality:* Supporting
+
+• *Impact of Failure:* Moderate/Low (Inconvenience)
+
+• *Personas:* Niche or specific admin roles |
+
+• Accessing Help/FAQ
+
+• Changing language preference
+
+• Password reset
+
+• Admin: Less common user management
+
+• Unsubscribing from notifications |
+
+• *Manual* Snow Plows and Flat Tires
+
+• *Automation:* Lower priority but still needed (both Snow Plows and Flat Tires)
+
+• *Persona Scope:* Primary platform/browser, relevant personas. Less cross-configuration needed.
+
+|*4* |*Dirt Tracks* |*Rarely used features, edge cases, low-impact paths.*
+
+• *Frequency:* Very Low
+
+• *Criticality:* Low/Non-Essential
+
+• *Impact of Failure:* Minimal
+
+• *Personas:* Very few, specific users |
+
+• Accessing archived/old pages
+
+• Using deprecated features
+
+• Highly specific/infrequent admin reports |
+
+• *Types:* Manual Snow Plow
+
+• *Automation:* Not automated other than regression tests
 |===
 
-*Review &amp; Iteration:* This rubric should be a living document. Regularly review the classification of journeys based on analytics data (if available), user feedback, and changes to JustServe.org's features and priorities. Ensure the testing strategy remains aligned with how users actually interact with the platform.
+*Review & Iteration:* This rubric should be a living document. Regularly review the classification of journeys based on analytics data (if available), user feedback, and changes to JustServe.org's features and priorities. Ensure the testing strategy remains aligned with how users actually interact with the platform.
