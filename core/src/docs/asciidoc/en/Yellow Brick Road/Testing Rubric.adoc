@@ -1,4 +1,4 @@
-== *JustServe.org: Yellow Brick Road Testing Rubric*
+== *JustServe.org: Yellow Brick Road Testing Rubric is for fun*
 
 *Purpose:* To classify user journeys within JustServe.org based on their importance and frequency of use, thereby guiding the allocation and intensity of testing resources. This rubric is designed to be used in tandem with a detailed persona matrix. +
 *Core Principle:* Journeys classified as the "Yellow Brick Road" represent the most critical and frequently used paths. These require the most rigorous testing across the widest range of user contexts (defined by the persona matrix).
